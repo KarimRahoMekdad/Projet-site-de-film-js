@@ -1,10 +1,10 @@
 async function recovery() {
     let answer = document.getElementById("research-bar").value;
-    const url = `http://www.omdbapi.com/?type=movie&s=${answer}&apikey=7815baba`;
+    const url = `https://www.omdbapi.com/?type=movie&s=${answer}&apikey=7815baba`;
 
     try {
         const response = await fetch(url);
-        
+
         const data = await response.json();
 
         const fetchMoviesContainer = document.getElementById("fetchMovies");
